@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mn-pnx:
+    image: pnx
+    container_name: mn-pnx
+    build:
+      context: .
+    ports:
+      - 31978:31978/tcp
+    volumes:
+      - $PWD/.phantomx:/root/.phantomx 
